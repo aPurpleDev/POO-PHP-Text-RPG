@@ -1,8 +1,10 @@
 <?php
 
+/*
+*Composant des personnages:Guerrier, Paladin et Voleur
+*/
 class Epee extends Armes
 	{
-
 				public function __construct($nomArme="Epee", $rareteArme="Rare",$degatsArme="10")
 				{
 					$this->nomArme = $nomArme;
@@ -40,4 +42,5 @@ class Epee extends Armes
 					$this->degatsArme = $degatsArme;
 				}
 	}
-	?>
+
+?>

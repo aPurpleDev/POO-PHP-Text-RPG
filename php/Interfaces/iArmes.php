@@ -1,18 +1,21 @@
 <?php
 
+/*
+*Interface de gestion des méthodes des armes
+*/
 interface iArmes
-{
-  public function getNomArme();
+  {
+    public function getNomArme();
 
-  public function getRareteArme();
+    public function getRareteArme();
 
-  public function getDegatsArme();
+    public function getDegatsArme();
 
-  public function setNomArme($nomArme);
+    public function setNomArme($nomArme);
 
-  public function setRareteArme($rareteArme);
+    public function setRareteArme($rareteArme);
 
-  public function setDegatsArme($degatsArme);
-}
+    public function setDegatsArme($degatsArme);
+  }
 
  ?>

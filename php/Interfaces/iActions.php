@@ -1,18 +1,21 @@
 <?php
 
-interface iActions
-{
-  public function getNomPersonnage();
+/*
+*Interface pour les méthodes des personnages
+*/
+  interface iActions
+  {
+    public function getNomPersonnage();
 
-  public function getArmePersonnage();
+    public function getArmePersonnage();
 
-  public function getViePersonnage();
+    public function getViePersonnage();
 
-  public function setNomPersonnage($nomPersonnage);
+    public function setNomPersonnage($nomPersonnage);
 
-  public function setArmePersonnage($nomArme, $rareteArme, $degatsArme);
+    public function setArmePersonnage($nomArme, $rareteArme, $degatsArme);
 
-  public function fuir();
-}
+    public function fuir();
+  }
 
- ?>
+?>

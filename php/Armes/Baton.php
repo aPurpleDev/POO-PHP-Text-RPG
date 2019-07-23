@@ -1,8 +1,11 @@
 <?php
 
+/*
+*Composant de personnage:Mage
+*/
+
 class Baton extends Armes
 	{
-
 				public function __construct($nomArme="Baton", $rareteArme="Rare",$degatsArme="5")
 				{
 					$this->nomArme = $nomArme;
@@ -40,4 +43,5 @@ class Baton extends Armes
 					$this->degatsArme = $degatsArme;
 				}
 	}
+	
 	?>

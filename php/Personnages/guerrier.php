@@ -1,51 +1,51 @@
 <?php
 
-class Guerrier extends Personnage implements iAttaque
+/*
+*Classe concrète Guerrier
+*/
+	class Guerrier extends Personnage implements iAttaque
 	{
+					public function __construct($nomPersonnage="Guerrier", $viePersonnage="100")
+					{
+						$this->nomPersonnage = $nomPersonnage;
+						$this->armePersonnage = new Epee();
+						$this->viePersonnage = $viePersonnage;
+					}
 
-				public function __construct($nomPersonnage="Guerrier", $viePersonnage="100")
-				{
-					$this->nomPersonnage = $nomPersonnage;
-					$this->armePersonnage = new Epee();
+					public function getNomPersonnage()
+					{
+						return $this->nomPersonnage;
+					}
 
-					$this->viePersonnage = $viePersonnage;
-				}
+					public function getArmePersonnage()
+					{
+						return $this->armePersonnage;
+					}
 
-				public function getNomPersonnage()
-				{
-					return $this->nomPersonnage;
-				}
+					public function getViePersonnage()
+					{
+						return $this->viePersonnage;
+					}
 
-				public function getArmePersonnage()
-				{
-					return $this->armePersonnage;
-				}
+					public function setNomPersonnage($nomPersonnage)
+					{
+						$this->nomPersonnage = $nomPersonnage;
+					}
 
-				public function getViePersonnage()
-				{
-					return $this->viePersonnage;
-				}
+					public function setArmePersonnage($nomArme, $rareteArme, $degatsArme)
+					{
+						$this->armePersonnage = new Epee($nomArme, $rareteArme, $degatsArme);
+					}
 
-				public function setNomPersonnage($nomPersonnage)
-				{
-					$this->nomPersonnage = $nomPersonnage;
-				}
+					public function attaquer(Personnage $personnageVersus)
+					{
+						$personnageVersus->viePersonnage -= $this->armePersonnage->getDegatsArme();
+						echo $this->nomPersonnage . " attaque " . $personnageVersus->nomPersonnage . " et lui retire " . $this->armePersonnage->getDegatsArme() . " points de vie" . '<br>';
+					}
 
-				public function setArmePersonnage($nomArme, $rareteArme, $degatsArme)
-				{
-					$this->armePersonnage = new Epee($nomArme, $rareteArme, $degatsArme);
-				}
-
-				public function attaquer(Personnage $personnageVersus)
-				{
-					$personnageVersus->viePersonnage -= $this->armePersonnage->getDegatsArme();
-
-					echo $this->nomPersonnage . " attaque " . $personnageVersus->nomPersonnage . " et lui retire " . $this->armePersonnage->getDegatsArme() . " points de vie" . '<br>';
-				}
-
-				public function fuir()
-				{
-					echo $this->nomPersonnage . " fuis le combat. Le lâche!" . '<br>' ;
-				}
-	}
-	?>
+					public function fuir()
+					{
+						echo $this->nomPersonnage . " fuis le combat. Le lâche!" . '<br>' ;
+					}
+		}
+?>

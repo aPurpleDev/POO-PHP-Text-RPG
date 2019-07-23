@@ -1,5 +1,7 @@
 <?php
-
+/*
+*Composant de personnage:Roublard
+*/
 class Arc extends Armes
 	{
 
@@ -40,4 +42,5 @@ class Arc extends Armes
 					$this->degatsArme = $degatsArme;
 				}
 	}
+
 	?>

@@ -1,13 +1,14 @@
 <?php
 
+/*
+*Classe concrète: Roublard
+*/
 class Roublard extends Personnage
 	{
-
 				public function __construct($nomPersonnage="Roublard", $viePersonnage="90")
 				{
 					$this->nomPersonnage = $nomPersonnage;
 					$this->armePersonnage = new Arc();
-
 					$this->viePersonnage = $viePersonnage;
 				}
 
@@ -39,7 +40,6 @@ class Roublard extends Personnage
 				public function attaquer(Personnage $personnageVersus)
 				{
 					$personnageVersus->viePersonnage -= $this->armePersonnage->getDegatsArme();
-
 					echo $this->nomPersonnage . " attaque " . $personnageVersus->nomPersonnage . " et lui retire " . $this->armePersonnage->getDegatsArme() . " points de vie" . '<br>';
 				}
 
@@ -48,4 +48,4 @@ class Roublard extends Personnage
 					echo $this->nomPersonnage . " fuis le combat. Le lâche!" . '<br>' ;
 				}
 	}
-	?>
+?>
