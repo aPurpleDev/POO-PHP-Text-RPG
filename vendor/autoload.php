@@ -16,6 +16,7 @@ require ('php/personnages/roublard.php');
 require ('php/personnages/voleur.php');
 
 require ('php/NPC/boss.php');
+require ('php/FinalBoss/boss.php');
 
 require_once __DIR__ . '/composer/autoload_real.php';
 

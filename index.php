@@ -79,9 +79,13 @@
 	var_dump($nicolas->armePersonnage);
 	echo '<br>';
 
-	echo "Instanciation d'un NPC" . '<br>';
+	echo "Instanciation d'un NPC du namespace Nonplayable" . '<br>';
 	$nefarian = new Nonplayable\Boss();
-	echo $nefarian->getBossName() . '<br>';
-	echo $nefarian->getBossHealth() . '<br>';
+	var_dump($nefarian);
+	echo '<br>';
+
+	echo "Instanciation d'un NPC du namespace finalBoss" . '<br>';
+	$cthun = new finalBoss\Boss();
+	var_dump($cthun);
 	echo '<br>';
 ?>
