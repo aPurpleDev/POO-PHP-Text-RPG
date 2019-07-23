@@ -1,6 +1,6 @@
 <?php
 
-class Mage extends Personnage
+class Mage extends Personnage implements iSorts
 	{
 
 				public function __construct($nomPersonnage="Mage", $viePersonnage="75")
@@ -36,11 +36,6 @@ class Mage extends Personnage
 					$this->armePersonnage = new Baton($nomArme, $rareteArme, $degatsArme);
 				}
 
-				public function attaquer(Personnage $personnageVersus)
-				{
-					$personnageVersus->viePersonnage -= $this->armePersonnage->degatsArme;
-				}
-
 				public function fuir()
 				{
 					echo $this->nomPersonnage . " fuis le combat. Le lâche!" . '<br>' ;
@@ -50,6 +45,12 @@ class Mage extends Personnage
 				{
 						$personnageVersus->viePersonnage -= ($this->armePersonnage->getDegatsArme() + 10);
 						echo $this->nomPersonnage . " envoie une boule de feu magique avec +10 dégats à " . $personnageVersus->nomPersonnage . " ." . '<br>' ;
+				}
+
+				public function eclair(Personnage $personnageVersus)
+				{
+						$personnageVersus->viePersonnage -= ($this->armePersonnage->getDegatsArme() + 20);
+						echo $this->nomPersonnage . " envoie un éclair magique avec +20 dégats à " . $personnageVersus->nomPersonnage . " ." . '<br>' ;
 				}
 	}
 	?>

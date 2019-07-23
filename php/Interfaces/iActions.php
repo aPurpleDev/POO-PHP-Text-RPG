@@ -1,6 +1,6 @@
 <?php
 
-interface iPersonnages
+interface iActions
 {
   public function getNomPersonnage();
 
@@ -11,8 +11,6 @@ interface iPersonnages
   public function setNomPersonnage($nomPersonnage);
 
   public function setArmePersonnage($nomArme, $rareteArme, $degatsArme);
-
-  public function attaquer(Personnage $personnageVersus);
 
   public function fuir();
 }

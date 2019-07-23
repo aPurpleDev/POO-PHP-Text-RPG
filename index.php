@@ -59,6 +59,7 @@ var_dump($gandalf->armePersonnage);
 echo '<br>';
 
 $gandalf->bouleDeFeu($aragorn);
+$gandalf->eclair($aragorn);
 $aragorn->attaquer($gandalf);
 $gandalf->fuir();
 

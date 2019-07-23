@@ -1,6 +1,6 @@
 <?php
 
-class Guerrier extends Personnage
+class Guerrier extends Personnage implements iAttaque
 	{
 
 				public function __construct($nomPersonnage="Guerrier", $viePersonnage="100")
