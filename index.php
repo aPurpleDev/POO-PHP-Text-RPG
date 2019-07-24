@@ -6,13 +6,18 @@
 
 
 <?php
+require ('vendor/autoload.php');
+
+echo "Instanciation d'une épée" . '<br>';
+	$excalibur = new Epee("Excalibur","Legendaire",100);
+	var_dump($excalibur);
 /*
 *De facto classe test des objets et méthodes
 */
-	require ('vendor/autoload.php');
+/*
 
-	echo "Instanciation d'une épée" . '<br>';
-	$excalibur = new Epee("Excalibur","Legendaire",100);
+
+
 	echo $excalibur->getNomArme() . '<br>';
 	echo $excalibur->getRareteArme() . '<br>';
 	echo $excalibur->getDegatsArme() . '<br>';
@@ -87,5 +92,5 @@
 	echo "Instanciation d'un NPC du namespace finalBoss" . '<br>';
 	$cthun = new finalBoss\Boss();
 	var_dump($cthun);
-	echo '<br>';
+	echo '<br>';*/
 ?>
