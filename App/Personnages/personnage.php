@@ -1,8 +1,6 @@
 <?php
-
-include ('php/interfaces/iactions.php');
-include ('php/interfaces/iattaque.php');
-include ('php/interfaces/isorts.php');
+namespace App\Personnages;
+use App\Interfaces\iActions;
 
 /*
 *Abstraction des personnages

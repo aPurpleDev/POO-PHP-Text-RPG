@@ -1,5 +1,6 @@
 <?php
-
+namespace App\Interfaces;
+use App\Personnages;
 /*
 *Interface pour les méthodes des personnages
 */

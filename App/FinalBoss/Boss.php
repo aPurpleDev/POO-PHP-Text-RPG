@@ -2,7 +2,7 @@
 /*
 *Classe de <NPCC> hors-namespacing pour tester
 */
-namespace finalBoss;
+namespace FinalBoss;
 
 	class Boss
 	{

@@ -1,5 +1,7 @@
 <?php
-
+namespace App\Personnages;
+Use App\Interfaces\iSorts;
+Use App\Armes\Baton;
 /*
 *Classe concrète: Mage
 */

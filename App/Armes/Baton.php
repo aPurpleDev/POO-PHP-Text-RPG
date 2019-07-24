@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Armes;
 /*
 *Composant de personnage:Mage
 */
@@ -43,5 +43,5 @@ class Baton extends Armes
 					$this->degatsArme = $degatsArme;
 				}
 	}
-	
+
 	?>

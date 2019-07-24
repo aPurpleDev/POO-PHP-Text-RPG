@@ -1,4 +1,5 @@
 <?php
+namespace App\Armes;
 /*
 *Composant de personnage:Roublard
 */

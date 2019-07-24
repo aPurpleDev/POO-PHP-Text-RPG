@@ -1,4 +1,6 @@
 <?php
+namespace App\Personnages;
+Use App\Interfaces\iAttaque;
 /*
 *Classe concrète: Paladin
 */

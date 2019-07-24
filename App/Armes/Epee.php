@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Armes;
 /*
 *Composant des personnages:Guerrier, Paladin et Voleur
 */

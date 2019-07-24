@@ -1,6 +1,6 @@
 <?php
 
-namespace Nonplayable;
+namespace Boss;
 /*
 *Classe de <NPCC> pour le namespacing</NPCC>
 */

@@ -1,5 +1,8 @@
 <?php
-include ('php/interfaces/iarmes.php');
+namespace App\Armes;
+use App\Interfaces\iArmes;
+
+//include ('php/interfaces/iarmes.php');
 
 /*
 *Abstraction de l'attribut arme des personnages

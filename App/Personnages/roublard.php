@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Personnages;
 /*
 *Classe concrète: Roublard
 */

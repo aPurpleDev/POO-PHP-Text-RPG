@@ -1,5 +1,6 @@
 <?php
-
+namespace App\Interfaces;
+use App\Personnages\personnage;
 /*
 *interface de gestion des méthodes de lancements de sorts, pour les personnages: mages
 */

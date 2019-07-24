@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Interfaces;
 /*
 *Interface de gestion des méthodes des armes
 */
