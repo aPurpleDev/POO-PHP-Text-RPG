@@ -49,9 +49,9 @@ Use \App\Armes\Epee;
 						echo "test";
 					}
 
-					public function fuir()
+					public function sedeplacer()
 					{
-						echo $this->nomPersonnage . " fuis le combat. Le lâche!" . '<br>' ;
+						echo $this->nomPersonnage . " se déplace. Attention !" . '<br>' ;
 					}
 		}
 ?>

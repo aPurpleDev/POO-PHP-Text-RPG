@@ -45,9 +45,9 @@ Use App\Armes\Epee;
 						echo $this->nomPersonnage . " attaque " . $personnageVersus->nomPersonnage . " et lui retire " . $this->armePersonnage->getDegatsArme() . " points de vie" . '<br>';
 					}
 
-					public function fuir()
+					public function sedeplacer()
 					{
-						echo $this->nomPersonnage . " fuis le combat. Le lâche!" . '<br>' ;
+						echo $this->nomPersonnage . " se déplace. Attention !" . '<br>' ;
 					}
 		}
 ?>

@@ -16,7 +16,7 @@ use App\Personnages;
 
     public function setArmePersonnage($nomArme, $rareteArme, $degatsArme);
 
-    public function fuir();
+    public function sedeplacer();
   }
 
 ?>

@@ -39,9 +39,9 @@ Use App\Armes\Baton;
 						$this->armePersonnage = new Baton($nomArme, $rareteArme, $degatsArme);
 					}
 
-					public function fuir()
+					public function sedeplacer()
 					{
-						echo $this->nomPersonnage . " fuis le combat. Le lâche!" . '<br>' ;
+						echo $this->nomPersonnage . " se déplace. Attention !" . '<br>' ;
 					}
 
 					public function bouleDeFeu(Personnage $personnageVersus)

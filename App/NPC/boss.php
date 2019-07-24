@@ -1,6 +1,6 @@
 <?php
 
-namespace Boss;
+namespace App\NPC;
 /*
 *Classe de <NPCC> pour le namespacing</NPCC>
 */
