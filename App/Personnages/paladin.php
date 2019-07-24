@@ -1,6 +1,7 @@
 <?php
 namespace App\Personnages;
 Use App\Interfaces\iAttaque;
+Use App\Armes\Epee;
 /*
 *Classe concrète: Paladin
 */

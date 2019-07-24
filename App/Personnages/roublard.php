@@ -1,9 +1,12 @@
 <?php
 namespace App\Personnages;
+
+use App\Interfaces\iAttaque;
+use App\Armes\Arc;
 /*
 *Classe concrète: Roublard
 */
-class Roublard extends Personnage
+class Roublard extends Personnage implements iAttaque
 	{
 				public function __construct($nomPersonnage="Roublard", $viePersonnage="90")
 				{
